@@ -74,6 +74,6 @@ Here is an example tree of the directory structure you should be turning in with
 ```
 danielsawyer_pa-2.zip contains...
 └── danielsawyer_pa-2
-    ├── est_trans.py
-    └── report.pdf
+      ├── est_trans.py
+      └── report.pdf
 ```
