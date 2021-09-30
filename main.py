@@ -6,6 +6,8 @@ from skimage.transform import resize
 import cv2
 import urllib.request
 import matplotlib.pyplot as plt
+import torch
+import torch.nn as nn
 sift_testing_blah = cv2.SIFT_create(nOctaveLayers = 3, contrastThreshold = 0.04, edgeThreshold = 10, sigma = 1.6)
 ##### IMPORTS END #####
 

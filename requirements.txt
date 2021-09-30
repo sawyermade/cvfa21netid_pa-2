@@ -17,4 +17,8 @@ scipy==1.7.1
 six==1.16.0
 threadpoolctl==2.2.0
 tifffile==2021.8.30
+torch==1.9.1
+torchaudio==0.9.1
+torchvision==0.10.1
 tqdm==4.62.3
+typing-extensions==3.10.0.2

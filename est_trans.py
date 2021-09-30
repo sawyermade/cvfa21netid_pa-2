@@ -5,6 +5,8 @@ import imageio, sys, os, numpy as np, zipfile, math
 from tqdm import tqdm
 from skimage.transform import warp
 from skimage.transform import resize
+import torch
+import torch.nn as nn
 try:
     from google.colab import drive
     os.system('pip install -U opencv-contrib-python==4.4.0.44')
