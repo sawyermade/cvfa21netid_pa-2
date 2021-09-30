@@ -53,6 +53,14 @@ class estimate_transforms:
 
         return (points_reg, points_warped)
 
+    ## Warp a
+    def warp_a(self):
+        pass
+
+    ## Warp b
+    def warp_b(self):
+        pass
+
 
     ##### STUDENTS SECTION #####
     ## Do not change the functions definition or return types
