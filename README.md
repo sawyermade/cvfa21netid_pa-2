@@ -13,7 +13,7 @@ If you want to use just Python and not Colab, I highly recommend installing Anac
 ## Clone GitHub Repo
 ```
 # Clone
-git clone https://github.com/sawyermade/cvfa21netid_project-1.git
+git clone https://github.com/sawyermade/cvfa21netid_pa-2.git
 
 # Change directory name to your netid, example using my netid
 # You can also use file explorer, right-click, and rename
