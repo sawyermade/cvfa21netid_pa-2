@@ -24,7 +24,7 @@ try:
     # Download image data
     data_dir_parent = '/content'
     data_dir = os.path.join(data_dir_parent, 'data')
-    data_zip = '/content/data.zip'
+    data_zip = os.path.join(data_dir_parent, 'data.zip')
     url = 'https://danielsawyer.com/pa_2_data.zip'
 
     # If data isnt already downloaded, downloads it and extracts
