@@ -61,7 +61,7 @@ Also, do not use any inline "!" bash commands in your first code cell where est_
 
 
 ## How To Submit
-1. For submission replace the cvfa21netid part of the directory with your netid. In my case, my netid is danielsawyer so the directory name would be danielsawyer_pa-2
+1. For submission replace the cvfa21netid part of the directory with your netid. In my case, my netid is danielsawyer bc my USF email is danielsawyer@usf.edu, so the directory name would be danielsawyer_pa-2
 
 2. The whole project should be contained within that directory. Then zip the directory, and only that directory, then save it as netid_pa-2.zip where netid is replaced by your netid. In my case, it would be danielsawyer_pa-2.zip
 
@@ -74,6 +74,6 @@ Here is an example tree of the directory structure you should be turning in with
 ```
 danielsawyer_pa-2.zip contains...
 └── danielsawyer_pa-2
-    ├── est_trans.py
-    └── report.pdf
+      ├── est_trans.py
+      └── report.pdf
 ```
