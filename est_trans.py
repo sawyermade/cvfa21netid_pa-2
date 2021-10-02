@@ -40,11 +40,11 @@ class estimate_transforms:
         pass
 
     ## RANSAC
-    def get_min_matches(self):
-        points_reg = None
-        points_warped = None
+    def get_min_matches(self, points_reg, points_warped, acceptable_error=2, min_samples=3, fraction_inlier=0.05):
+        T = np.eye(3)
+        re = 0.0
 
-        return (points_reg, points_warped)
+        return (T, re)
 
     ## Get SIFT Feature Point Pairs
     def get_sift_points(self, num_matches):
@@ -61,6 +61,19 @@ class estimate_transforms:
     def warp_b(self):
         pass
 
+    ## Affine fit function
+    def affine_fit(self, points_reg, points_warped):
+        pass
+
+    ## Rotation and translation fit function
+    def rt_fit(self, points_reg, points_warped):
+        pass
+
+    ## Perspective/Projection fit function
+    def perspective_fit(self, points_reg, points_warped):
+        pass
+
+
 
     ##### STUDENTS SECTION #####
     ## Do not change the functions definition or return types
@@ -68,9 +81,8 @@ class estimate_transforms:
     ## Affine fit
     def fit_affine(self):
         # Can delete, just makes blank residual and Transform matrix
-        points_reg, points_warped = self.get_min_matches()
-        T = np.eye(3)
-        re = 0.0
+        points_reg, points_warped = self.get_sift_points(num_matches)
+        T, re = self.get_min_matches(points_reg, points_warped, self.affine_fit)
 
         # Dont change output/return
         return (T, re)
@@ -78,9 +90,8 @@ class estimate_transforms:
     ##  Rotation & Translation fit
     def fit_rotate_translation(self):
         # Can delete, just makes blank residual and Transform matrix
-        points_reg, points_warped = self.get_min_matches()
-        T = np.eye(3)
-        re = 0.0
+        points_reg, points_warped = self.get_sift_points(num_matches)
+        T, re = self.get_min_matches(points_reg, points_warped, self.rt_fit)
 
         # Dont change output/return
         return (T, re)
@@ -88,9 +99,8 @@ class estimate_transforms:
     ## Perspective/Projective fit
     def fit_perspective(self):
         # Can delete, just makes blank residual and Transform matrix
-        points_reg, points_warped = self.get_min_matches()
-        T = np.eye(3)
-        re = 0.0
+        points_reg, points_warped = self.get_sift_points(num_matches)
+        T, re = self.get_min_matches(points_reg, points_warped, self.perspective_fit)
 
         # Dont change output/return
         return (T, re)
