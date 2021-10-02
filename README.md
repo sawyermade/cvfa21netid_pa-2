@@ -55,7 +55,7 @@ python3 main.py
 
 4. ALWAYS run the above cells first before you run ones below. Not sure why I have to say this but apparently I do.
 
-5. Once coding on the class estimate_transform is complete, copy the first cell and paste into est_trans.py or create a new est_trans.py and follow submission guidlines below.
+5. Once coding on the class estimate_transform is complete, copy the first cell and paste into est_trans.py or create a new est_trans.py and paste it in there. Then follow the submission guidlines below.
 
 6. DO NOT add any imports or do any type of viewing (matplotlib, cv2.imshow, etc) in the first code cell with the estimate_transforms class's code. YOU MAY GET A ZERO ON ALL CODE IF YOU DO THIS. Put this stuff in the main section.
 
