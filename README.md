@@ -53,7 +53,7 @@ python3 main.py
 
 3. Open main.py in a text editor and then copy/paste into the second code cell.
 
-4. ALWAYS run the top cell first before you run the other. Not sure why I have to say this but apparently I do.
+4. ALWAYS run the above cells first before you run ones below. Not sure why I have to say this but apparently I do.
 
 5. Once coding on the class estimate_transform is complete, copy the first cell and paste into est_trans.py or create a new est_trans.py and follow submission guidlines below.
 
