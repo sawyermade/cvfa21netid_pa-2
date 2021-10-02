@@ -37,7 +37,7 @@ OR
 ### Pip Setup
 ```
 # Install Modules Pip
-pip3 install -r requirements.txt
+pip3 install -U -r requirements.txt
 ```
 
 ### Run program
