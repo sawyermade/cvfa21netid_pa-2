@@ -57,7 +57,7 @@ python3 main.py
 
 5. DO NOT add any imports or do any type of viewing (matplotlib, cv2.imshow, etc) in the first code cell with the estimate_transforms class's code. YOU MAY GET A ZERO ON ALL CODE IF YOU DO THIS. Put this stuff in the main section.
 
-Also, do not use any inline "!" bash commands in your first code cell where est_trans.py code is located. You wont need it and it will mess up the grading process, which will lose you points since you cant follow instructions.
+DO NOT use any inline "!" bash commands in your first code cell where est_trans.py code is located. You wont need it and it will mess up the grading process, which will lose you points since you cant follow instructions.
 
 
 ## How To Submit
