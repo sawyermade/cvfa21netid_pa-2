@@ -81,7 +81,7 @@ class estimate_transforms:
     ## Affine fit
     def fit_affine(self):
         # Can delete, just makes blank residual and Transform matrix
-        points_reg, points_warped = self.get_sift_points(num_matches)
+        points_reg, points_warped = self.get_sift_points(num_matches=8)
         T, re = self.run_ransac(points_reg, points_warped, self.affine_fit)
 
         # Dont change output/return
@@ -90,7 +90,7 @@ class estimate_transforms:
     ##  Rotation & Translation fit
     def fit_rotate_translation(self):
         # Can delete, just makes blank residual and Transform matrix
-        points_reg, points_warped = self.get_sift_points(num_matches)
+        points_reg, points_warped = self.get_sift_points(num_matches=8)
         T, re = self.run_ransac(points_reg, points_warped, self.rt_fit)
 
         # Dont change output/return
@@ -99,7 +99,7 @@ class estimate_transforms:
     ## Perspective/Projective fit
     def fit_perspective(self):
         # Can delete, just makes blank residual and Transform matrix
-        points_reg, points_warped = self.get_sift_points(num_matches)
+        points_reg, points_warped = self.get_sift_points(num_matches=8)
         T, re = self.run_ransac(points_reg, points_warped, self.perspective_fit)
 
         # Dont change output/return
