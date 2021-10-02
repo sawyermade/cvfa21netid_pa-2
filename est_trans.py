@@ -40,7 +40,7 @@ class estimate_transforms:
         pass
 
     ## RANSAC
-    def get_min_matches(self, points_reg, points_warped, acceptable_error=2, min_samples=3, fraction_inlier=0.05):
+    def run_ransac(self, points_reg, points_warped, acceptable_error=2, min_samples=3, fraction_inlier=0.05):
         T = np.eye(3)
         re = 0.0
 
@@ -82,7 +82,7 @@ class estimate_transforms:
     def fit_affine(self):
         # Can delete, just makes blank residual and Transform matrix
         points_reg, points_warped = self.get_sift_points(num_matches)
-        T, re = self.get_min_matches(points_reg, points_warped, self.affine_fit)
+        T, re = self.run_ransac(points_reg, points_warped, self.affine_fit)
 
         # Dont change output/return
         return (T, re)
@@ -91,7 +91,7 @@ class estimate_transforms:
     def fit_rotate_translation(self):
         # Can delete, just makes blank residual and Transform matrix
         points_reg, points_warped = self.get_sift_points(num_matches)
-        T, re = self.get_min_matches(points_reg, points_warped, self.rt_fit)
+        T, re = self.run_ransac(points_reg, points_warped, self.rt_fit)
 
         # Dont change output/return
         return (T, re)
@@ -100,7 +100,7 @@ class estimate_transforms:
     def fit_perspective(self):
         # Can delete, just makes blank residual and Transform matrix
         points_reg, points_warped = self.get_sift_points(num_matches)
-        T, re = self.get_min_matches(points_reg, points_warped, self.perspective_fit)
+        T, re = self.run_ransac(points_reg, points_warped, self.perspective_fit)
 
         # Dont change output/return
         return (T, re)
