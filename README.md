@@ -53,9 +53,11 @@ python3 main.py
 
 3. Open main.py in a text editor and then copy/paste into the second code cell.
 
-4. Once coding on the class estimate_transform is complete, copy the first cell and paste into est_trans.py or create a new est_trans.py and follow submission guidlines below.
+4. ALWAYS run the top cell first before you run the other. Not sure why I have to say this but apparently I do.
 
-5. DO NOT add any imports or do any type of viewing (matplotlib, cv2.imshow, etc) in the first code cell with the estimate_transforms class's code. YOU MAY GET A ZERO ON ALL CODE IF YOU DO THIS. Put this stuff in the main section.
+5. Once coding on the class estimate_transform is complete, copy the first cell and paste into est_trans.py or create a new est_trans.py and follow submission guidlines below.
+
+6. DO NOT add any imports or do any type of viewing (matplotlib, cv2.imshow, etc) in the first code cell with the estimate_transforms class's code. YOU MAY GET A ZERO ON ALL CODE IF YOU DO THIS. Put this stuff in the main section.
 
 DO NOT use any inline "!" bash commands in your first code cell where est_trans.py code is located. You wont need it and it will mess up the grading process, which will lose you points since you cant follow instructions.
 
